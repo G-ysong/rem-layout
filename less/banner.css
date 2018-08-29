@@ -1,0 +1,25 @@
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+.banner ul {
+  width: 1000%;
+  transform: translateX(-10%);
+  -webkit-transform: translateX(-10%);
+}
+.banner ul li {
+  width: 10%;
+  float: left;
+}
+.banner ul li a {
+  display: block;
+  width: 100%;
+}
+.banner ul li a img {
+  display: block;
+  width: 100%;
+}
+.banner ol {
+  position: absolute;
+  left: 50%;
+}

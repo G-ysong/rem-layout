@@ -1,0 +1,10 @@
+//less没有for循环
+//使用迭代  死循环
+.adapterMixin(@index) when(@index > 0){
+  @media (min-width: extract(@adapterDeviceList, @index)){
+    html{
+      font-size: @baseFontSize / @psdWidth * extract(@adapterDeviceList, @index);
+    }
+  }
+  .adapterMixin(@index - 1);
+}

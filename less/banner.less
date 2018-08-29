@@ -1,0 +1,41 @@
+.banner{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /*图片*/
+  ul{
+    width: 100%*10;
+    transform: translateX(-100%/10);
+    -webkit-transform: translateX(-100%/10);
+    li{
+      width: 100%/10;
+      float: left;
+      a{
+        display: block;
+        width: 100%;
+        img{
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+  /*点*/
+  ol{
+    position: absolute;
+    right: 20rem/@baseFontSize;
+    bottom: 20rem/@baseFontSize;
+    li{
+      float: left;
+      cursor: pointer;
+      margin-left: 12rem/@baseFontSize;
+      width: 12rem/@baseFontSize;
+      height: 12rem/@baseFontSize;
+      border-radius: 50%;
+      background: #fff;
+      &.now{
+        background: @snColor;
+      }
+    }
+  }
+}
